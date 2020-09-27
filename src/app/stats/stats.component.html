@@ -1,0 +1,39 @@
+<script type="text/javascript" src="statsApi.js"></script>
+<body>
+    <mat-card>
+        <mat-card-title>Statistics</mat-card-title>
+        <div>
+            <p>Enter Player's User Name</p>
+            <button mat-flat-button color="primary" onclick="getPlayer();">Get Player</button>
+            <mat-form-field color="primary" class="searchBar">
+                <input matInput placeholder="Username" id="searchPlayer"><br>
+            </mat-form-field>
+            <p id="platform">Player Display Name : </p>
+        </div>
+
+        <div>
+            <p>Player's Characters : </p>
+
+            <div>
+                <img id="emblem1">
+                <p id="class1">Class : </p>
+                <p id="light1">Power Level : </p>
+                <p id="playTime1">Hours Played : </p>
+            </div>
+
+            <div>
+                <img id="emblem2">
+                <p id="class2">Class : </p>
+                <p id="light2">Power Level : </p>
+                <p id="playTime2">Hours Played : </p>
+            </div>
+
+            <div>
+                <img id="emblem3">
+                <p id="class3">Class : </p>
+                <p id="light3">Power Level : </p>
+                <p id="playTime3">Hours Played : </p>
+            </div>
+        </div>
+    </mat-card>
+</body>

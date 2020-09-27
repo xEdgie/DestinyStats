@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+@import url('//fonts.googleapis.com/icon?family=Material+Icons');
+@import 'custom-theme.scss';
+
+$primary: #1C1C1C;
+$secondary: #292929;
+
+//Nav #1C1C1C
+//Background #292929
+
+html
+{
+    background: $secondary;
+}
+
+header {
+    background: $primary;
+    height: 80px;
+    padding: 10px;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a.logo {
+        color: white;
+        font-size: 34px;
+        padding: 0px;
+        text-decoration: none;
+    }
+
+    nav {
+        float: right;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            display: flex;
+            padding-bottom: 14px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 14px;
+
+            li a {
+                font-size: 22px;
+                padding: 25px;
+                
+                &:hover {
+                    background: lighten($primary, 10%);
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
